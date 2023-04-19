@@ -22,8 +22,8 @@ To run this project, you need a web browser and a text editor.
 
 ## Authors
 
-* [Diwakar  Singh](https://github.com/thakurdiwakar)
+* [Tanish Basu](https://tanish-basu-portfolio.netlify.app/)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
