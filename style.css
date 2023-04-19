@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2A293E;
+  background: linear-gradient(to bottom, #2196F3, #2196F3, #2A293E);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #2A293E;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 40px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  background-color: #1a1a1a;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us {
+  background: linear-gradient(to bottom right, #8ac9ff, #f6a5c0);
+  padding: 80px;
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+}
+
+button {
+  margin-top: 40px;
+  padding: 0 20px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: var(--primary-color);
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+}
+
+button:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
+::selection {
+  background-color: var(--accent-color);
+}
+
+/* Form input autofill styles */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  border-color: var(--primary-color);
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px var(--secondary-color) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Form input focus animation */
+input:focus,
+textarea:focus {
+  border-color: var(--accent-color);
+  animation-name: input-focus;
+}
+
+@keyframes input-focus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
